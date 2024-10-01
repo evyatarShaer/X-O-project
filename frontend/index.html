@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>משחק איקס-עיגול</title>
+    <link rel="stylesheet" href="/frontend/css/style.css" />
+  </head>
+  <body>
+    <main class="container-game">
+      <h1>איקס-עיגול</h1>
+
+      <div class="game-board" role="grid">
+        <button class="game-cell" aria-label="משבצת עליונה שמאלית"></button>
+        <button class="game-cell" aria-label="משבצת עליונה אמצעית"></button>
+        <button class="game-cell" aria-label="משבצת עליונה ימנית"></button>
+        <button class="game-cell" aria-label="משבצת אמצעית שמאלית"></button>
+        <button class="game-cell" aria-label="משבצת מרכזית"></button>
+        <button class="game-cell" aria-label="משבצת אמצעית ימנית"></button>
+        <button class="game-cell" aria-label="משבצת תחתונה שמאלית"></button>
+        <button class="game-cell" aria-label="משבצת תחתונה אמצעית"></button>
+        <button class="game-cell" aria-label="משבצת תחתונה ימנית"></button>
+      </div>
+      <section class="information">
+        <div class="information-game-current">
+          <h2>נתוני המשחק הנוכחי</h2>
+          <div class="player-2"><p>שחקן יריב:</p></div> 
+        </div>
+
+        <div class="game-history-information">
+          <h2>היסטוריית תוצאות</h2>
+          <div class="game-history"><p>סטטוס משחקים אחרונים:</p></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
