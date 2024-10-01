@@ -17,6 +17,56 @@
     font-family: Arial, sans-serif;
   }
   
+  .register, .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    color: aliceblue;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .register {
+    background-color: rgba(0, 0, 76, 0.333);
+  }
+  
+  .login {
+    background-color: rgba(54, 0, 99, 0.378);
+  }
+  
+  .register input, .login input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .register button, .login button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.866);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .register button:hover, .login button:hover {
+    background-color: rgba(0, 0, 0, 0.382);
+    color: aliceblue;
+    cursor: pointer;
+  }
+  
   .container-game {
     display: flex;
     flex-direction: column;
@@ -29,6 +79,53 @@
     width: 100%;
     max-width: 500px;
     height: auto;
+  }
+  
+  .game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #logout-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #logout-button:hover {
+    color: #ff6b6b62;
+  }
+  
+  .game-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #new-game-button, #game-type {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;}
+  
+  #new-game-button:hover, #game-type:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  #game-type {
+    background-color: rgba(0, 0, 0, 0.707);
   }
   
   .game-board {
@@ -46,6 +143,8 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
   }
   
   .game-cell:hover {
@@ -95,6 +194,7 @@
     .game-cell {
       width: 60px;
       height: 60px;
+      font-size: 24px;
     }
   
     .information {
